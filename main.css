@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #141024;
+  padding: 30px 0 0 0;
+  height: 100vh;
+}
+
+.header-container {
+  margin: 0;
+  max-width: 1920px;
+  padding: 0 100px;
+}
+
+.logo {
+  font-family: "Jost";
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  line-height: 160%;
+}
+.logo:hover {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.link:hover {
+  color: #2B2739;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.phone-link {
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  color: white;
+}
+
+.header-nav {
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.burger {
+  display: none;
+}
+
+.header__tel-icon {
+  display: none;
+}
+
+.banner-container {
+  max-width: 1160px;
+}
+
+.banner-text {
+  gap: 20px;
+}
+
+.banner-title {
+  font-family: "Jost";
+  font-size: 70px;
+  color: white;
+  font-weight: 600;
+}
+
+.banner-subtitle {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.banner-button {
+  padding: 25px 54px;
+  background-color: #D52027;
+  border-radius: 5px;
+  color: white;
+  font-family: "Jost";
+  font-size: 18px;
+  line-height: 160%;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.banner-button:hover {
+  background-color: #2B2739;
+  color: white;
+}
+
+.banner-img {
+  max-width: 783px;
+}
+
+.btn-modal {
+  border-radius: 15px;
+  padding: 10px 40px;
+}
+
+@media (max-width: 1199px) {
+  .header-container {
+    padding: 0 10px;
+  }
+  header {
+    padding: 10px 0;
+    height: 64px;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+  .burger.hidden {
+    z-index: -10;
+    opacity: 0;
+  }
+  .header-nav.active {
+    display: flex;
+    right: 0;
+    transition: 0.5s ease;
+    right: 0;
+    z-index: 2;
+    width: 320px;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    align-items: center;
+    background-color: #141024;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    width: 0;
+    top: 0;
+    transition: 0.5s ease;
+    gap: 20px;
+  }
+  .phone-link {
+    display: none;
+  }
+  .header__tel-icon {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    right: 64px;
+    top: 10px;
+    opacity: 1;
+    transition: 0.7s ease;
+  }
+  .header__tel-icon.hidden {
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .nav-link {
+    opacity: 0;
+    font-size: 0;
+    white-space: nowrap;
+    transition: 0.5s ease;
+  }
+  .nav-link.active {
+    display: block;
+    opacity: 1;
+    font-size: 30px;
+    transition: 0.5s ease;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    font-size: 18px;
+  }
+}

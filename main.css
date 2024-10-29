@@ -112,13 +112,21 @@ header {
   padding: 10px 40px;
 }
 
+@media (max-width: 1440px) {
+  .banner-img {
+    max-width: 630px;
+  }
+  .banner-title {
+    font-size: 60px;
+  }
+}
 @media (max-width: 1199px) {
   .header-container {
     padding: 0 10px;
   }
   header {
-    padding: 10px 0;
-    height: 64px;
+    max-height: 700px;
+    padding: 10px 0 0 0;
   }
   .logo {
     font-size: 25px;
@@ -186,6 +194,34 @@ header {
     opacity: 1;
     font-size: 30px;
     transition: 0.5s ease;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  header {
+    max-height: 100vh;
+  }
+  .banner-title {
+    margin-top: 47px;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+  }
+  .banner-subtitle {
+    font-size: 16px;
+    text-align: center;
+    z-index: 10;
+  }
+  .banner-button {
+    padding: 0;
+    z-index: 10;
+  }
+  .banner-img {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
   }
 }
 @media (max-width: 576px) {

@@ -1,5 +1,7 @@
 $font1: "Jost";
 $red: #D52027;
+$blue: #141024;
+$purple: #2B2739;
 
 * {
     margin: 0;
@@ -9,7 +11,7 @@ $red: #D52027;
 // header
 
 header{
-    background-color: #141024;
+    background-color: $blue;
     padding: 30px 0 0 0;
     height: 100vh;
 }
@@ -35,7 +37,7 @@ header{
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     &:hover {
-        color: #2B2739;
+        color: $purple;
     }
 }
 
@@ -66,11 +68,6 @@ header{
 .header__tel-icon {
     display: none;
 }
-
-
-
-
-// main
 
 
 // banner
@@ -111,7 +108,7 @@ header{
     border: none;
     transition: all 0.2s ease-in-out;
     &:hover {
-        background-color: #2B2739;
+        background-color: $purple;
         color: white;
     }
 }
@@ -131,10 +128,130 @@ header{
     border: none;
     transition: all 0.2s ease-in-out;
     &:hover {
-        background-color: #2B2739;
+        background-color: $purple;
         color: white;
     }
 
+}
+
+
+// main
+
+//about_us
+
+.main-container {
+    padding-top: 120px;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 1160px;
+}
+
+.about_us_text {
+    font-family: $font1;
+    line-height: 160%;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.about_us {
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.about_us_chisla {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.chisla_text {
+    padding: 0 10px;
+}
+
+.chisla_title {
+    font-family: $font1;
+    color: $red;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.chisla_subtitle {
+    color: $blue;
+    font-family: $font1;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+// advantages
+
+.advantages_bg {
+    background-color: #F9F9F9;
+    padding: 100px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.advantages {
+    max-width: 1160px;
+}
+
+.advantages_title {
+    font-family: $font1;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    color: $blue;
+}
+
+.advantages_subtitle {
+    padding-top: 60px;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.advantages_text_title {
+    font-family: $font1;
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 600;
+    color: $blue;
+}
+
+.advantages_text_subtitle {
+    font-family: $font1;
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    color: $blue;
+    opacity: 70%;
+    max-width: 360px;
+}
+
+.bs-tooltip-auto {
+    margin-left: 115px !important;
+}
+
+.tooltip-inner {
+    color: $blue !important;
+    background-color: white !important;
+    font-family: $font1 !important;
+    font-size: 16px !important;
+    line-height: 160% !important;
+    font-weight: 400 !important;
+    max-width: 1000px;
+    padding: 15px 20px;
+}
+
+.tooltip-arrow::before {
+    display: none;
+}
+
+.tooltip_img {
+    cursor: pointer;
 }
 
 
@@ -166,7 +283,7 @@ header{
 
 
 
-@media (max-width:1440px) {
+@media screen and (max-width:1440px) {
     .banner-img {
         max-width: 630px;
     }
@@ -176,7 +293,7 @@ header{
 }
 
 
-@media (max-width: 1199px){
+@media screen and (max-width: 1199px){
     .header-container {
         padding: 0 10px;
     }
@@ -254,9 +371,30 @@ header{
     .banner-title {
         font-size: 50px;
     }
+
+
+
+
+    .main-container {
+        max-width: 1000px;
+        padding-top: 60px;
+    }
+    .about_us_chisla {
+        gap: auto;
+        padding-bottom: 40px;
+    }
+
+
+
+    .advantages_bg {
+        padding: 40px 0;
+    }
+    .advantages_subtitle {
+        padding-top: 40px;
+    }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     header {
         height: 100vh;
         max-height: 700px;
@@ -288,7 +426,29 @@ header{
     }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 768px) {
+    .about_us_text {
+        font-size: 20px;
+    }
+    .chisla_1, .chisla_2 {
+        gap: 20px;
+    }
+
+
+
+    .advantages_title {
+        font-size: 30px;
+        line-height: 140%;
+    }
+    .advantages_text_title {
+        font-size: 20px;
+    }
+    .advantages_text_subtitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
     header {
         position: relative;
         max-height: 680px;
@@ -307,4 +467,11 @@ header{
     .logo {
         font-size: 18px;
     }
+    .chisla_subtitle {
+        font-size: 16px;
+    }
+    .chisla_title {
+        font-size: 60px;
+    }
+    
 }

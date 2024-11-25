@@ -94,7 +94,59 @@
             </div>
         </header>
         <main>
-            
+            <div class="container main-container">
+                <section class="about_us col-10 col-xxl-12">
+                    <div class="about_us_text col-12 col-lg-9">
+                        <span class="bold">Robo School</span>– учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
+                    </div>
+                    <div class="about_us_chisla col-12 d-flex flex-column flex-md-row g-0 justify-content-between align-items-center">
+                        <div class="chisla_1 col-12 col-md-6 d-flex flex-column flex-xxl-row align-items-center justify-content-between">
+                            <div class="chisla_text col-12 col-sm-8 col-xxl-6 text-center text-xxl-start">
+                                <p class="chisla_title">10</p>
+                                <p class="chisla_subtitle">УМК по различным направлениям по робототехнике</p>
+                            </div>
+                            <div class="chisla_text col-12 col-sm-8 col-xxl-6 text-center text-xxl-start">
+                                <p class="chisla_title">20</p>
+                                <p class="chisla_subtitle">Школ, в которых запущена робототехника</p>
+                            </div>
+                        </div>
+                        <div class="chisla_2 col-12 col-md-6 d-flex flex-column flex-xxl-row align-items-center justify-content-between">
+                            <div class="chisla_text col-12 col-sm-8 col-xxl-6 text-center text-xxl-start">
+                                <p class="chisla_title">100</p>
+                                <p class="chisla_subtitle">Педагогов прошедших курсы повышения квалификации</p>
+                            </div>
+                            <div class="chisla_text col-12 col-sm-8 col-xxl-6 text-center text-xxl-start">
+                                <p class="chisla_title" style="text-wrap: nowrap;">10 000</p>
+                                <p class="chisla_subtitle">Обученных детей на базе собственных центров</p>                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages_bg d-flex justify-content-center align-items-center">
+                    <div class="advantages col-10 col-xxl-12">
+                        <p class="advantages_title col-12 text-center text-xxl-start">Что вы получите после курса</p>
+                        <div class="advantages_subtitle col-10 col-xxl-12 d-flex flex-column align-items-center text-center flex-xl-row justify-content-center align-items-xl-start text-xl-start">
+                            <div class="advantages_text">
+                                <p class="advantages_text_title">Удостоверение</p>
+                                <p class="advantages_text_subtitle">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                            </div>
+                            <div class="advantages_text">
+                                <p class="advantages_text_title">Знания</p>
+                                <p class="advantages_text_subtitle">По основам разработки учебно-методических комплексов
+                                    по робототехнике и программированию</p>
+                            </div>
+                            <div class="advantages_text">
+                                <p class="advantages_text_title">Практику 
+                                    <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="При наличии свободных мест">
+                                        <img src="images/tooltip.svg" alt="tooltip" class="tooltip_img" diabled>
+                                    </span>
+                                </p>
+                                <p class="advantages_text_subtitle">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
 
         </main>
@@ -115,5 +167,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
         <script src="js/burgerFunction.js"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </body>
 </html>

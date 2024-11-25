@@ -18,6 +18,9 @@
     </head>
 
     <body>
+
+
+
         <header class="d-flex flex-column justify-content-lg-between justify-content-start align-items-center">
             <div class="container header-container align-content-center">
                 <nav class="d-flex flex-row header-row justify-content-between">
@@ -39,6 +42,9 @@
                     <img src="images/burger-close.svg" alt="burger-close" class="burger hidden">
                 </nav>
             </div>
+
+
+
             <div class="container banner-container col-12 col-sm-8 col-lg-10 col-xxl-12 g-0 d-flex flex-column align-items-center justify-content-center">
                 <section class="banner col-10 col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-start">
                     <div class="d-flex flex-column banner-text col-xxl-6 justify-content-between justify-content-lg-center align-items-center align-items-lg-start text-container">
@@ -51,6 +57,9 @@
                     <img src="images/woman.svg" alt="" class="banner-img col-md-8 col-lg-6 col-xxl-7">
                 </section>
             </div>
+
+
+
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -93,8 +102,12 @@
                 </div>
             </div>
         </header>
+
+
+
+
         <main>
-            <div class="container main-container">
+            <div class="container main-container" id="about">
                 <section class="about_us col-10 col-xxl-12">
                     <div class="about_us_text col-12 col-lg-9">
                         <span class="bold">Robo School</span>– учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
@@ -122,6 +135,10 @@
                         </div>
                     </div>
                 </section>
+            </div>
+
+
+
                 <section class="advantages_bg d-flex justify-content-center align-items-center">
                     <div class="advantages col-10 col-xxl-12">
                         <p class="advantages_title col-12 text-center text-xxl-start">Что вы получите после курса</p>
@@ -146,10 +163,62 @@
                         </div>
                     </div>
                 </section>
+
+            
+            <div class="container main-container">
+                <section class="trainers" id="trainers">
+                    <p class="trainers_title">Профессиональные тренеры</p>
+
+                    <div class="trainers_slider col-12">
+                        <div class="carousel-container col-12">
+                            <div class="carousel" id="carousel" data-bs-touch="true">
+                                <div class="slider_item">
+                                    <img src="images/slide1.png" alt="фото1" class="carousel-item_img">
+                                    <p class="carousel-item_title">Ирина Лайм</p>
+                                    <p class="carousel-item_subtitle">преподаватель по робототехнике</p>
+                                    <a href="" class="carousel-item_link">Подробнее</a>
+                                </div>
+                                <div class="slider_item">
+                                    <img src="images/slide2.png" alt="фото2" class="carousel-item_img">
+                                    <p class="carousel-item_title"></p>
+                                    <p class="carousel-item_subtitle"></p>
+                                    <a href="" class="carousel-item_link">Подробнее</a>
+                                </div>
+                                <div class="slider_item">
+                                    <img src="images/slide3.png" alt="фото3" class="carousel-item_img">
+                                    <p class="carousel-item_title"></p>
+                                    <p class="carousel-item_subtitle"></p>
+                                    <a href="" class="carousel-item_link">Подробнее</a>
+                                </div>
+                                <div class="slider_item">
+                                    <img src="images/slide4.png" alt="фото4" class="carousel-item_img">
+                                    <p class="carousel-item_title"></p>
+                                    <p class="carousel-item_subtitle"></p>
+                                    <a href="" class="carousel-item_link">Подробнее</a>
+                                </div>
+                                <div class="slider_item">
+                                    <img src="images/slide5.png" alt="фото5" class="carousel-item_img">
+                                    <p class="carousel-item_title"></p>
+                                    <p class="carousel-item_subtitle"></p>
+                                    <a href="" class="carousel-item_link">Подробнее</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="carousel-controls">
+                            <button id="prevBtn">Предыдущий</button>
+                            <button id="nextBtn">Следующий</button>
+                        </div>
+                    </div>
+                </section>
+
+
+
             </div>
-
-
         </main>
+
+        
         <footer>
             <!-- place footer here -->
         </footer>
@@ -172,6 +241,31 @@
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
             })
+        </script>
+        <script>
+            let currentSlide = 0;
+            const carousel = document.getElementById('carousel');
+            const totalSlides = carousel.children.length;
+            const visibleSlides = 2.90;
+            
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                if (currentSlide < totalSlides - visibleSlides) {
+                    currentSlide++;
+                    updateCarousel();
+                }
+            });
+    
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateCarousel();
+                }
+            });
+    
+            function updateCarousel() {
+                const slideWidth = 100 / visibleSlides;
+                carousel.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+            }
         </script>
     </body>
 </html>

@@ -190,13 +190,12 @@ header{
 .advantages_bg {
     background-color: #F9F9F9;
     padding: 100px 0;
-    width: 100%;
-    position: absolute;
-    left: 0;
+    width: 100vw;
 }
 
 .advantages {
     max-width: 1160px;
+    position: relative;
 }
 
 .advantages_title {
@@ -257,6 +256,46 @@ header{
 
 
 
+.trainers {
+    position: relative;
+}
+
+.trainers_slider {
+    position: relative;
+}
+
+.carousel-container {
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider_item {
+    margin-right: 40px;
+    width: 33vw;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background-color: #0056b3;
+}
 
 
 

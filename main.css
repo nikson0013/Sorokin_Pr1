@@ -34,7 +34,7 @@ header {
   color: #2B2739;
 }
 
-.nav-link {
+.nav-link1 {
   display: block;
   color: white;
   font-family: "Jost";
@@ -236,10 +236,55 @@ header {
 
 .trainers {
   position: relative;
+  margin: 0 auto;
+}
+
+.trainers_title {
+  font-family: "Jost";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 60px;
+  color: #141024;
+}
+
+.carousel-item_title {
+  font-family: "Jost";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 160%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #141024;
+}
+
+.carousel-item_link {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #D52027;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.carousel-item_link:hover {
+  color: #141024;
+}
+
+.carousel-item_subtitle {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #141024;
+  opacity: 70%;
 }
 
 .trainers_slider {
   position: relative;
+  margin: 0 auto;
 }
 
 .carousel-container {
@@ -253,26 +298,102 @@ header {
 }
 
 .slider_item {
-  margin-right: 40px;
-  width: 33vw;
+  padding: 0 20px;
 }
 
 .carousel-controls {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 58px;
 }
 
 .carousel-controls button {
-  margin: 5px;
-  padding: 10px;
-  background-color: #007BFF;
-  color: white;
   border: none;
   cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  margin: 5px;
+  background-color: white;
 }
 
 .carousel-controls button:hover {
-  background-color: #0056b3;
+  transform: scale(1.2);
+}
+
+.end {
+  background-color: #141024;
+  color: #141024;
+  opacity: 100%;
+  border: none;
+  height: 3px;
+  max-width: 440px;
+  align-self: center;
+  border-radius: 40px;
+  margin: 60px auto;
+}
+
+.modal-body1 {
+  padding: 40px;
+}
+
+.modal_img {
+  max-width: 160px;
+  padding-right: 40px;
+}
+
+.start-text_title {
+  margin-top: 0;
+}
+
+.start-text_subtitle {
+  margin-bottom: 10px;
+}
+
+.start-text_link {
+  padding-right: 10px;
+}
+
+.start-text_link {
+  text-decoration: none;
+}
+
+.modal_tabs {
+  margin-top: 40px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #e5e5e7;
+  padding-bottom: 20px;
+}
+
+.nav-link {
+  border: none !important;
+  transition: none;
+  padding-left: 0;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #141024;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.modal_tab-text {
+  padding-top: 20px;
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  color: #141024;
+  line-height: 160%;
+}
+
+.nav-link.active, .nav-link:hover {
+  border: none;
+  color: #D52027 !important;
+}
+
+.nav-link.disabled {
+  color: #141024 !important;
+  opacity: 20% !important;
 }
 
 @media screen and (max-width: 1440px) {
@@ -346,13 +467,13 @@ header {
     opacity: 0;
     transition: 0.3s ease;
   }
-  .nav-link {
+  .nav-link1 {
     opacity: 0;
     font-size: 0;
     white-space: nowrap;
     transition: 0.5s ease;
   }
-  .nav-link.active {
+  .nav-link1.active {
     display: block;
     opacity: 1;
     font-size: 30px;

@@ -1,7 +1,7 @@
 const burger = document.querySelectorAll('.burger'),
     menu = document.querySelectorAll('.header-nav'),
     tel = document.querySelectorAll('.header__tel-icon'),
-    navItem = document.querySelectorAll('.nav-link');
+    navItem = document.querySelectorAll('.nav-link1');
 
 function toggleBurger() {
     burger.forEach(item => {

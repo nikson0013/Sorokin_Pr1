@@ -259,6 +259,7 @@ header{
 .trainers {
     position: relative;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .trainers_title {
@@ -425,6 +426,34 @@ header{
 
 
 
+// footer
+
+.footer {
+    width: 100vw;
+    background-color: $blue;
+    padding: 40px 100px;
+}
+
+.phone {
+    font-family: $font1;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    color: white;
+}
+
+.footer_text {
+    color: #fff;
+    opacity: 70%;
+    font-family: $font1;
+    font-weight: 300;
+    font-style: 18px;
+    line-height: 160%;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+
 
 
 
@@ -550,6 +579,10 @@ header{
     .advantages_subtitle {
         padding-top: 40px;
     }
+
+    .phone {
+        font-size: 25px;
+    }
 }
 
 
@@ -605,6 +638,28 @@ header{
     .advantages_text_subtitle {
         font-size: 16px;
     }
+
+
+    .trainers_title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    .footer_logo_and_phone {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .footer_text {
+        font-size: 14px;
+    }
+    .footer {
+        padding: 40px 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -633,4 +688,9 @@ header{
         font-size: 60px;
     }
     
+
+
+    .trainers_title {
+        font-size: 26px;
+    }
 }

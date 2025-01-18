@@ -237,6 +237,7 @@ header {
 .trainers {
   position: relative;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 .trainers_title {
@@ -396,6 +397,31 @@ header {
   opacity: 20% !important;
 }
 
+.footer {
+  width: 100vw;
+  background-color: #141024;
+  padding: 40px 100px;
+}
+
+.phone {
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 160%;
+  color: white;
+}
+
+.footer_text {
+  color: #fff;
+  opacity: 70%;
+  font-family: "Jost";
+  font-weight: 300;
+  font-style: 18px;
+  line-height: 160%;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1440px) {
   .banner-img {
     max-width: 630px;
@@ -496,6 +522,9 @@ header {
   .advantages_subtitle {
     padding-top: 40px;
   }
+  .phone {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 992px) {
   header {
@@ -545,6 +574,23 @@ header {
   .advantages_text_subtitle {
     font-size: 16px;
   }
+  .trainers_title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .footer_logo_and_phone {
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  .phone {
+    font-size: 16px;
+  }
+  .footer_text {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
 }
 @media screen and (max-width: 576px) {
   header {
@@ -570,5 +616,8 @@ header {
   }
   .chisla_title {
     font-size: 60px;
+  }
+  .trainers_title {
+    font-size: 26px;
   }
 }
